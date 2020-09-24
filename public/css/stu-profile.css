@@ -1,0 +1,28 @@
+.body-con{
+    margin-top:130px;
+    padding-bottom: 150px;
+    border-radius: 30px;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    
+}
+body{
+    background-image: linear-gradient(62deg, rgb(233, 121, 112),rgb(213, 192, 80));
+}
+.footer{
+    background-color: #776892;
+    margin-top:70px ;
+    border-radius: 20px;
+}
+
+.stu-pro-img{
+    padding-top:160px ;
+    
+}
+.stu-pro-details{
+    padding-top:100px ;
+
+}
+
+.navbar{
+    border-radius: 10px;
+}

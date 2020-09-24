@@ -8,11 +8,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/studentpage.css">
+    <link rel="stylesheet" type="text/css" href="./css/stu-profile.css">
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Student Portal</title>
+    <title>Student Profile</title>
 </head>
 
 <body>
@@ -38,89 +38,84 @@
                     </span> 
                 </button>
             </div>
-           
         </div>
-           
     </nav>
-    
-    <header class="jumbotron " >
-        <div class=" " style="width:100px">
-            <img src="img/sreenidhi-logo.png"  alt="logo">
-        </div>
-    </header> 
-
-                     
-   <div  class = "main-body" style="background-image: url('./img/Subtle-Prism.svg');">
-      <!-- about -->
-      
-      <!-- end about -->
-         
-        <div class="container">
-            <div class="row row-content-1">
-                <div class=" col-md-4">
-                    <div class="card">
-                        <div class="icon"><i class="material-icons md-36">face</i></div>
-                        <p class="title">Profile</p>
-                        <button class="btn btn-large btn-primary text" style="border-radius: 20px;">CLICK HERE</button>
-                        <p class="text">Click to see or edit your profile page.</p>
-                    </div>
-                </div>
-
-                <div class=" col-md-4">
-                    <div class="card ">
-                        <div class="icon"><i class="material-icons md-36"><img src="./img/lecture-slides-removebg-preview.png" style="width: 110px;"></i></div>
-                        <p class="title">Lecture Slides</p>
-                        <button class="btn btn-large btn-primary text" style="border-radius: 20px;">CLICK HERE</button>
-                        <p class="text">Click to see the downloadable ppts.</p>
-                    </div>
-                </div>
-                <div class=" col-md-4">
-                    <div class="card ">
-                        <div class="icon"><i class="material-icons md-36"><img src="./img/index-removebg-preview.png" style="width: 70px;"></i></div>
-                        <p class="title">Attendance</p>
-                        <button class="btn btn-large btn-primary text" style="border-radius: 20px;">CLICK HERE</button>
-                        <p class="text">Click to check the attendance.</p>
-                    </div>
-                </div>
+    <div class=" body-con container">
+        <div class="row row-container">
+            <div class="col-12 col-sm-4 stu-pro-img">
+                <img src="./img/2062002861579680337-512-removebg-preview.png" style="width: 300px;">
             </div>
-            <div class="row row-content-2">
-                <div class=" col-md-4">
-                    <div class="card ">
-                        <div class="icon"><i class="material-icons md-36"><img src="./img/images-removebg-preview.png" style="width: 50px;"></i></div>
-                        <p class="title">Assignments</p>
-                        <button class="btn btn-large btn-primary text" style="border-radius: 20px;">CLICK HERE</button>
-                        <p class="text">Click to see the Assignments.</p>
+        <div class="col-12 col-sm-8 stu-pro-details">
+            <form>
+                <div class="form-group row">
+                  <label for="student-name" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-6">
+                    <fieldset disabled>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder=" SHAIK SOHAIL" style="cursor: pointer;">
+                    </fieldset>
+                </div>
+                </div>
+                <div class="form-group row">
+                    <label for="student-father-name" class="col-sm-2 col-form-label">Father Name</label>
+                    <div class="col-sm-6">
+                      <fieldset disabled>
+                      <input type="text" id="disabledTextInput" class="form-control" placeholder="SHAIK SALEEM" style="cursor: pointer;">
+                      </fieldset>
+                  </div>
+                  </div>
+                <div class="form-group row">
+                  <label for="student-email" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-6">
+                        <fieldset disabled>
+                            <input type="text" id="student-email" class="form-control" placeholder="18311A05W4@SREENIDHI.EDU.IN" style="cursor: pointer;">
+                        </fieldset>
                     </div>
                 </div>
-                
-                <div class=" col-md-4">
-                    <div class="card">
-                        <div class="icon"><i class="material-icons md-36"><img src="./img/tt.png" style="width: 50px;"></i></div>
-                        <p class="title">TimeTable</p>
-                        <button class="btn btn-large btn-primary text" style="border-radius: 20px;">CLICK HERE</button>
-                        <p class="text">Check your timetable.</p>
-                    </div>
-                </div>
-            <div class=" col-md-4">    
-                <div class="card ">
-                    <div class="icon"><i class="material-icons md-36"><img src="./img/grades-removebg.png" style="width: 100px;"></i></div>
-                    <p class="title">Results</p>
-                    <button class="btn btn-large btn-primary text" style="border-radius: 20px;">CLICK HERE</button>
-                    <p class="text">Click to see the results.</p>
-                </div>
-            </div>
-            <!-- end card -->
+                <div class="form-group row">
+                    <label for="student-branch" class="col-sm-2 col-form-label">Branch</label>
+                    <div class="col-sm-6">
+                          <fieldset disabled>
+                              <input type="text" id="student-branch" class="form-control" placeholder="CSE" style="cursor: pointer;">
+                          </fieldset>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="student-year" class="col-sm-2 col-form-label">Year</label>
+                    <div class="col-sm-6">
+                          <fieldset disabled>
+                              <input type="text" id="student-year" class="form-control" placeholder="III" style="cursor: pointer;">
+                          </fieldset>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="student-sem" class="col-sm-2 col-form-label">Semister</label>
+                    <div class="col-sm-6">
+                          <fieldset disabled>
+                              <input type="text" id="student-sem" class="form-control" placeholder="I" style="cursor: pointer;">
+                          </fieldset>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="student-address" class="col-sm-2 col-form-label" >Address</label>
+                    <div class="col-sm-6">
+                          <fieldset disabled>
+                              <input type="text" id="student-address" class="form-control" placeholder="Khammam, kaviRaj-5, Yellandu 'X' road" style="cursor: pointer;">
+                          </fieldset>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="student-state" class="col-sm-2 col-form-label" >State</label>
+                    <div class="col-sm-6">
+                          <fieldset disabled>
+                              <input type="text" id="student-state" class="form-control" placeholder="Telengana" style="cursor: pointer;">
+                          </fieldset>
+                      </div>
+                  </div>
+              </form>
         </div>
-      </div>
-      
-    </div>  
-    
-      
-      
+        </div>
 
-
-
-
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -166,10 +161,6 @@
            </div>
         </div>
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
+    

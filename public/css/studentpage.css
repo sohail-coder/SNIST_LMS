@@ -159,19 +159,6 @@ address{
 	opacity: 1;
 	max-height: 40px;
 }
-
-.card:hover .icon {
-	background-position: -120px;
-	transition: all 0.3s ease;
-}
-
-.card:hover .icon i {
-	background: linear-gradient(90deg, #ff7e7e, #ff4848);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	opacity: 1;
-	transition: all 0.3s ease;
-}
 .row-content-1{
     padding-top: 50px;
 }
