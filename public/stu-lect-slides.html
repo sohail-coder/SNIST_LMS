@@ -8,11 +8,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/stu-profile.css">
+    <link rel="stylesheet" type="text/css" href="./css/stu-lect-slides.css">
     <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Student Profile</title>
+    <title>LECTURE SLIDES</title>
 </head>
 
 <body>
@@ -40,82 +40,106 @@
             </div>
         </div>
     </nav>
-    <div class=" body-con container">
-        <div class="row row-container">
-            <div class="col-12 col-sm-4 stu-pro-img">
-                <img src="./img/2062002861579680337-512-removebg-preview.png" style="width: 300px;">
-            </div>
-        <div class="col-12 col-sm-8 stu-pro-details">
+    <div class=" body-con container ">
+        <div class="row row-container ">
+          
+        <div class="col-12 col-sm-12 stu-lect-slides">
             <form>
-                <div class="form-group row">
-                  <label for="student-name" class="col-sm-2 col-form-label">Name</label>
+                <div class="form-group row justify-content-center">
+                  <label for="student-yr" class="col-sm-2 col-form-label">Year</label>
                   <div class="col-sm-6">
-                    <fieldset disabled>
-                    <input type="text" id="disabledTextInput" class="form-control" placeholder=" SHAIK SOHAIL" style="cursor: pointer;">
-                    </fieldset>
+                    <select name="student-yr" id="student-yr" class="btn btn-info options" >
+                      <option value="I">I</option>
+                      <option value="II">II</option>
+                      <option value="III">III</option>
+                      <option value="IV">IV</option>
+                      
+                    </select>
                 </div>
                 </div>
-                <div class="form-group row">
-                    <label for="student-father-name" class="col-sm-2 col-form-label">Father Name</label>
-                    <div class="col-sm-6">
-                      <fieldset disabled>
-                      <input type="text" id="disabledTextInput" class="form-control" placeholder="SHAIK SALEEM" style="cursor: pointer;">
-                      </fieldset>
-                  </div>
-                  </div>
-                <div class="form-group row">
-                  <label for="student-email" class="col-sm-2 col-form-label">Email</label>
-                  <div class="col-sm-6">
-                        <fieldset disabled>
-                            <input type="text" id="student-email" class="form-control" placeholder="18311A05W4@SREENIDHI.EDU.IN" style="cursor: pointer;">
-                        </fieldset>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="student-branch" class="col-sm-2 col-form-label">Branch</label>
-                    <div class="col-sm-6">
-                          <fieldset disabled>
-                              <input type="text" id="student-branch" class="form-control" placeholder="CSE" style="cursor: pointer;">
-                          </fieldset>
-                      </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="student-year" class="col-sm-2 col-form-label">Year</label>
-                    <div class="col-sm-6">
-                          <fieldset disabled>
-                              <input type="text" id="student-year" class="form-control" placeholder="III" style="cursor: pointer;">
-                          </fieldset>
-                      </div>
-                  </div>
-                  <div class="form-group row">
+                <div class="form-group row justify-content-center">
                     <label for="student-sem" class="col-sm-2 col-form-label">Semister</label>
                     <div class="col-sm-6">
-                          <fieldset disabled>
-                              <input type="text" id="student-sem" class="form-control" placeholder="I" style="cursor: pointer;">
-                          </fieldset>
-                      </div>
+                      <select name="student-sem" id="student-sem" class="btn btn-info options" >
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        </select>
                   </div>
-                  <div class="form-group row">
-                    <label for="student-address" class="col-sm-2 col-form-label" >Address</label>
+                  </div>
+                  <div class="form-group row justify-content-center">
+                    <label for="student-department" class="col-sm-2 col-form-label">Department</label>
                     <div class="col-sm-6">
-                          <fieldset disabled>
-                              <input type="text" id="student-address" class="form-control" placeholder="Khammam, kaviRaj-5, Yellandu 'X' road" style="cursor: pointer;">
-                          </fieldset>
-                      </div>
+                      <select name="student-department" id="student-department" class="btn btn-info options" >
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                        <option value="MECH">MECH</option>
+                        <option value="CIVIL">CIVIL</option>
+                      </select>
                   </div>
-                  <div class="form-group row">
-                    <label for="student-state" class="col-sm-2 col-form-label" >State</label>
+                  </div>
+                  <div class="form-group row justify-content-center">
+                    <label for="student-section" class="col-sm-2 col-form-label">Section</label>
                     <div class="col-sm-6">
-                          <fieldset disabled>
-                              <input type="text" id="student-state" class="form-control" placeholder="Telengana" style="cursor: pointer;">
-                          </fieldset>
-                      </div>
+                      <select name="cars" id="cars" class="btn btn-info options" >
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                      </select>
+                      <!--
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default option<span class="caret"></span></button>
+                        <ul id="my-select" class="dropdown-menu">
+                                <li data-value="10" role="presentation"><a href="#">Option 1</a></li>
+                                <li data-value="20" role="presentation"><a href="#">Option 2</a></li>
+                        </ul>
+                    </div>
+                     -->
+                      <!--
+                      <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="stu-sec" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Section
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="stu-sec">
+                            <a class="dropdown-item" href="#">A</a>
+                            <a class="dropdown-item" href="#">B</a>
+                            <a class="dropdown-item" href="#">C</a>
+                            <a class="dropdown-item" href="#">D</a>
+                            <a class="dropdown-item" href="#">E</a>
+                            </div>
+                        </div>-->
                   </div>
+                  </div>
+                  <div class="form-group row justify-content-center">
+                    <label for="student-subject" class="col-sm-2 col-form-label">Subject</label>
+                    <div class="col-sm-6">
+                      <select name="cars" id="cars" class="btn btn-info options" >
+                        <option value="DAA">DAA</option>
+                        <option value="DWDM">DWDM</option>
+                        <option value="BoE">BoE</option>
+                        <option value="IDS">IDS</option>
+                        <option value="IDT">IDT</option>
+                        <option value="SS">SS</option>
+                        <option value="QA">QA</option>
+                        <option value="CN">CN</option>
+                      </select>
+                      
+                        
+                  </div>
+                 
+                  </div>
+                 
+                  <div class="form-group row">
+                    <div class="offset-md-4 col-md-10 stu-lect-slides-submit">
+                        <button type="submit" class="btn btn-success options">Submit</button>
+                    </div>
+                </div>
               </form>
         </div>
         </div>
-
-    </div>
+        </div>
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -164,6 +188,12 @@
     <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+    <script>
+  $(".dropdown-menu li a").click(function () {
+    var selText = $(this).text();
+    $(this).parents('.btn-group').find('.dropdown-toggle').html(selText + ' <span class="caret"></span>');
+});
+      </script>
+  </body>
 </html>
     
